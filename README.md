@@ -1,2 +1,0 @@
-# inquiringjoy
-personal website
