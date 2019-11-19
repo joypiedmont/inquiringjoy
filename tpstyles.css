@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Tahoma, "Gill Sans", Geneva, sans-serif;
+	font-size: 11pt;
+	background-color: #000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.oneColElsCtrHdr #container {
+	width: 800px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 30px;
+	position:relative;
+}
+.oneColElsCtrHdr #header {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	position:relative;
+} 
+.oneColElsCtrHdr #mainContent {
+	background: #FFFFFF;
+	position:relative;
+	padding-top: 0;
+	padding-right: 105px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	max-height: 600px;
+	min-height: 500px;
+}
+.oneColElsCtrHdr #container #mainContent h1 {
+	font-size: x-large;
+}
+.oneColElsCtrHdr #container #mainContent h2 {
+	font-size: large;
+}
+#hometitle {
+	position:relative;
+	width:800px;
+	height:70px;
+	z-index:1;
+	left: 0px;
+	top: 0px;
+	background-color: #FFFFFF;
+}
+#navigation {
+	position:absolute;
+	width:670px;
+	height:40px;
+	z-index:1;
+	left: 20px;
+	top: 0px;
+	clear: both;
+}
+.image {
+	padding-right: 10px;
+}
+#photos {
+	position:relative;
+	width:300px;
+	height:400px;
+	z-index:1;
+	left: 0px;
+	top: 25px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #999999;
+}
